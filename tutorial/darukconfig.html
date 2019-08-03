@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>daruk.config.ts | Daruk</title>
+    <meta name="description" content="Daruk, a typescript web framework.">
+    <link rel="shortcut icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.5203916d.css" as="style"><link rel="preload" href="/assets/js/app.72e9a57f.js" as="script"><link rel="preload" href="/assets/js/2.1aa7d77a.js" as="script"><link rel="preload" href="/assets/js/13.bfb85a2b.js" as="script"><link rel="prefetch" href="/assets/js/10.dcdafbfb.js"><link rel="prefetch" href="/assets/js/11.c36530c4.js"><link rel="prefetch" href="/assets/js/12.5bb40911.js"><link rel="prefetch" href="/assets/js/14.da39be58.js"><link rel="prefetch" href="/assets/js/15.ee4dcf43.js"><link rel="prefetch" href="/assets/js/16.e1536870.js"><link rel="prefetch" href="/assets/js/17.53200c53.js"><link rel="prefetch" href="/assets/js/18.7277ad5c.js"><link rel="prefetch" href="/assets/js/19.614058aa.js"><link rel="prefetch" href="/assets/js/20.230e3969.js"><link rel="prefetch" href="/assets/js/21.b145ea80.js"><link rel="prefetch" href="/assets/js/22.26dca48c.js"><link rel="prefetch" href="/assets/js/23.12e9d851.js"><link rel="prefetch" href="/assets/js/24.35c80293.js"><link rel="prefetch" href="/assets/js/25.3512c86d.js"><link rel="prefetch" href="/assets/js/26.b7716043.js"><link rel="prefetch" href="/assets/js/27.b05076a0.js"><link rel="prefetch" href="/assets/js/28.ee276c0b.js"><link rel="prefetch" href="/assets/js/29.1bb956e4.js"><link rel="prefetch" href="/assets/js/3.6b7cef43.js"><link rel="prefetch" href="/assets/js/30.49da5322.js"><link rel="prefetch" href="/assets/js/31.5bcce73e.js"><link rel="prefetch" href="/assets/js/32.16d238ba.js"><link rel="prefetch" href="/assets/js/33.49aea5a7.js"><link rel="prefetch" href="/assets/js/34.a9b81a6c.js"><link rel="prefetch" href="/assets/js/35.d66bbd33.js"><link rel="prefetch" href="/assets/js/36.785ac76f.js"><link rel="prefetch" href="/assets/js/37.cd105c78.js"><link rel="prefetch" href="/assets/js/4.7bf71852.js"><link rel="prefetch" href="/assets/js/5.b3624f16.js"><link rel="prefetch" href="/assets/js/6.7679d8b8.js"><link rel="prefetch" href="/assets/js/7.fe3c8465.js"><link rel="prefetch" href="/assets/js/8.913b0939.js"><link rel="prefetch" href="/assets/js/9.e4a24934.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.5203916d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="Daruk" class="logo"> <span class="site-name can-hide">Daruk</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/darukjs/daruk.org" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"> <a href="https://github.com/darukjs/daruk.org" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">Daruk</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>教程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/tutorial/install.html" class="sidebar-link">安装</a></li><li><a href="/tutorial/about.html" class="sidebar-link">介绍</a></li><li><a href="/tutorial/typescript.html" class="sidebar-link">TypeScript</a></li><li><a href="/tutorial/different.html" class="sidebar-link">Daruk 和 Koa 的区别</a></li><li><a href="/tutorial/scaffolding.html" class="sidebar-link">脚手架</a></li><li><a href="/tutorial/quick-start.html" class="sidebar-link">快速开始</a></li><li><a href="/tutorial/specification.html" class="sidebar-link">目录约束规范</a></li><li><a href="/tutorial/lifecycle.html" class="sidebar-link">生命周期</a></li><li><a href="/tutorial/darukconfig.html" class="active sidebar-link">daruk.config.ts</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/tutorial/darukconfig.html#文件目录结构" class="sidebar-link">文件目录结构</a></li><li class="sidebar-sub-header"><a href="/tutorial/darukconfig.html#daruk-config" class="sidebar-link">daruk config</a></li></ul></li><li><a href="/tutorial/projectConfig.html" class="sidebar-link">config</a></li><li><a href="/tutorial/decorator.html" class="sidebar-link">装饰器</a></li><li><a href="/tutorial/router.html" class="sidebar-link">controllers</a></li><li><a href="/tutorial/middleware.html" class="sidebar-link">middlewares</a></li><li><a href="/tutorial/service.html" class="sidebar-link">services</a></li><li><a href="/tutorial/gule.html" class="sidebar-link">glues</a></li><li><a href="/tutorial/util.html" class="sidebar-link">utils</a></li><li><a href="/tutorial/timer.html" class="sidebar-link">timers</a></li><li><a href="/tutorial/culster.html" class="sidebar-link">cluster</a></li><li><a href="/tutorial/logger.html" class="sidebar-link">日志</a></li><li><a href="/tutorial/performance.html" class="sidebar-link">性能</a></li><li><a href="/tutorial/extension.html" class="sidebar-link">扩展</a></li><li><a href="/tutorial/pm2.html" class="sidebar-link">生产环境部署</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>框架原理</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>api</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>更多</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="daruk-config-ts"><a href="#daruk-config-ts" aria-hidden="true" class="header-anchor">#</a> daruk.config.ts</h1> <h2 id="文件目录结构"><a href="#文件目录结构" aria-hidden="true" class="header-anchor">#</a> 文件目录结构</h2> <p>通过上面的章节，我们知道，一个完整的项目包含了一下约定的目录结构:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>./daruk-example/src
+├── app.ts
+├── daruk.config.ts
+├── daruk.init.ts
+├── config
+│   └── index.ts
+├── controllers
+│   ├── contact
+│   │   ├── index.ts
+│   │   └── list.ts
+│   ├── index.ts
+│   └── user.ts
+├── middlewares
+│   └── koa-test-mid.ts
+├── services
+│   └── UserInfo.ts
+├── glues
+│   └── mysql
+│       ├── connect.ts
+│       └── index.ts
+├── timers
+│   └── myTimer.ts
+├── utils
+│   └── index.ts
+├── public
+│   └── daruk.png
+</code></pre></div><p><code>app.ts</code>是  应用  的入口文件，通常代码如下：</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> daruk <span class="token keyword">from</span> <span class="token string">&quot;./daruk.init&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> port <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">PORT</span> <span class="token operator">||</span> <span class="token number">3000</span><span class="token punctuation">;</span>
+
+daruk<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span>port<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  daruk<span class="token punctuation">.</span>logger<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`服务已启动，访问 http://localhost:3000 查看效果`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> daruk<span class="token punctuation">;</span>
+</code></pre></div><p>为了在非约定目录能够方便地拿到 daruk 实例，我们通常选择在<code>daruk.init.ts</code>中初始化 daruk，然后在需要的地方能够直接<code>import</code>：</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token keyword">import</span> <span class="token punctuation">{</span> Daruk <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&quot;daruk&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Daruk</span><span class="token punctuation">(</span><span class="token string">&quot;myapp&quot;</span><span class="token punctuation">,</span> options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>daruk 继承自 koa，比如有些中间件需要传递 koa 实例作为参数，我们直接传递 daruk 实例即可。</p> <p>除了上述两个文件，剩下的文件和目录都是约定的（非必须），daruk 会主动去加载各个目录下的内容，然后挂载到 daruk 实例或者 koa 的 context 对象上。</p> <p>约定目录中的内容初始化顺序是：<code>config -&gt; daruk.config -&gt; utils -&gt; glues -&gt; services -&gt; middlewares -&gt; controllers -&gt; timers</code></p> <h2 id="daruk-config"><a href="#daruk-config" aria-hidden="true" class="header-anchor">#</a> daruk config</h2> <p><code>daruk.config.ts</code> 是对约定目录的补充，使你能够不通过约定目录，就能向 daruk 挂载内容。通常内容如下：</p> <div class="language-typescript extra-class"><pre class="language-typescript"><code><span class="token comment">// src/daruk.config.ts</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> darukConfig<span class="token punctuation">:</span><span class="token builtin">any</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token comment">// 定义中间件执行顺序</span>
+  darukConfig<span class="token punctuation">.</span>middlewareOrder <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'koa2-cors'</span><span class="token punctuation">,</span> <span class="token string">'daurk-test-middleware'</span><span class="token punctuation">]</span>
+  <span class="token comment">// 定义中间件</span>
+  <span class="token comment">// darukConfig.middleware 对象的 key 即是用在 middlewareOrder 中的中间件名字</span>
+  darukConfig<span class="token punctuation">.</span>middleware <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// key 即是中间件包名，也是中间件的名字</span>
+    <span class="token comment">// 值为一个函数，函数需要返回中间件的内容</span>
+    <span class="token string">'koa2-cors'</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">mid<span class="token punctuation">:</span> <span class="token builtin">Function</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// mid 变量就是通过包名加载到的中间件的内容</span>
+      <span class="token keyword">return</span> <span class="token function">mid</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token string">&quot;allowMethods&quot;</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'GET'</span><span class="token punctuation">,</span> <span class="token string">'POST'</span><span class="token punctuation">,</span> <span class="token string">'DELETE'</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token comment">// 分别指定中间件的名字和包名</span>
+    <span class="token string">'my-middleware'</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      packet<span class="token punctuation">:</span> <span class="token string">'koa-body'</span><span class="token punctuation">,</span>
+      <span class="token comment">// 在 export 函数中返回中间件的内容</span>
+      <span class="token function-variable function">export</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">mid<span class="token punctuation">:</span> <span class="token builtin">Function</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token function">mid</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 直接在 daruk.util、ctx.util 上定义一些方法</span>
+  darukConfig<span class="token punctuation">.</span>util <span class="token operator">=</span> <span class="token punctuation">{</span>
+		<span class="token string">&quot;testUtil&quot;</span><span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 直接定义定时器配置</span>
+  darukConfig<span class="token punctuation">.</span>timer <span class="token operator">=</span> <span class="token punctuation">{</span>
+    testTimer<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// 最后需要 return 配置</span>
+  <span class="token keyword">return</span> darukConfig
+<span class="token punctuation">}</span>
+
+</code></pre></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/darukjs/daruk.org/edit/master/docs/tutorial/DarukConfig.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.72e9a57f.js" defer></script><script src="/assets/js/2.1aa7d77a.js" defer></script><script src="/assets/js/13.bfb85a2b.js" defer></script>
+  </body>
+</html>
